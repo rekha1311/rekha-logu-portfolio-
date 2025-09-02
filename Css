@@ -1,0 +1,178 @@
+
+
+Great! Here's a complete CSS-based portfolio example. This version includes HTML + external CSS to give you a clean and responsive design using just HTML and CSS.
+
+
+---
+
+🎨 Step 1: index.html
+
+Create a file called index.html:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Your Name</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm a web developer passionate about clean design and great user experiences.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>A personal portfolio to showcase my work and skills.</p>
+      <a href="#">View Project</a>
+    </div>
+    <div class="project-card">
+      <h3>Blog Platform</h3>
+      <p>A simple blog using HTML, CSS, and JavaScript.</p>
+      <a href="#">View Project</a>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/yourusername">yourusername</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Name</p>
+  </footer>
+
+</body>
+</html>
+
+
+---
+
+🎨 Step 2: style.css
+
+Create a file called style.css:
+
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+header {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.project-card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills-list li {
+  background: #007BFF;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .skills-list {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
